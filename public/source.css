@@ -1,0 +1,110 @@
+@import url(../public/normalize.css);
+* {
+  font-family: 'Roboto', sans-serif; }
+
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 100vh;
+  width: 684px;
+  margin: auto;
+  background: #e0e0e0; }
+
+section {
+  border-radius: 3px;
+  position: relative;
+  width: 292px;
+  height: 184px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); }
+  section:hover {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer; }
+  section > div {
+    display: flex;
+    position: relative;
+    top: -18px; }
+    section > div:last-child {
+      background: #f9f9f9;
+      padding: 16px 24px;
+      justify-content: space-between; }
+    section > div div:first-child {
+      width: 64px;
+      height: 64px;
+      background: #e0e0e0;
+      margin: 24px; }
+
+.inverse {
+  background: #444; }
+  .inverse > div {
+    top: -12px; }
+    .inverse > div:last-child {
+      background: #333; }
+    .inverse > div div:first-child {
+      background: #545454; }
+
+span {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #fff;
+  bottom: 30px;
+  left: 24px; }
+
+.inverse span {
+  border-bottom: 12px solid #444; }
+
+.tooltip-right span {
+  display: block;
+  transform: rotate(90deg);
+  bottom: -30px;
+  left: 286px; }
+
+p {
+  color: #333;
+  line-height: 1.667;
+  font-weight: 500;
+  margin: 0;
+  font-size: 14px;
+  color: #8d8d8d; }
+
+h2 {
+  color: #333;
+  line-height: 1.667;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 16px 0 0; }
+
+.inverse h2 {
+  color: #fff; }
+
+button {
+  width: 107px;
+  height: 40px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px; }
+  button:hover {
+    transition: all 0.1s linear;
+    opacity: 0.9; }
+  button:focus {
+    outline: none;
+    box-shadow: inset 1px 1px 2px #868686; }
+  button:first-child {
+    background: #00bcd4;
+    color: #fff; }
+  button:last-child {
+    background: #e0e0e0;
+    color: #333; }
+
+.inverse button:last-child {
+  background: #444;
+  color: #fff; }
+
+/*# sourceMappingURL=source.css.map */
